@@ -10,7 +10,6 @@ type Props = {
 
 const CustomButton = extendVariants(Button, {
   variants: {
-    // <- modify/add variants
     color: {
       darkblue: "text-[#fff] bg-[#091A5A]",
     },
@@ -24,12 +23,10 @@ const CustomButton = extendVariants(Button, {
     },
   },
   defaultVariants: {
-    // <- modify/add default variants
     color: "darkblue",
     size: "xl",
   },
   compoundVariants: [
-    // <- modify/add compound variants
     {
       isDisabled: true,
       color: "darkblue",

@@ -34,7 +34,7 @@ export default function Header() {
           </NavbarItem>
         ))}
       </NavbarContent>
-      <NavbarContent justify="end" className="hidden sm:flex">
+      <NavbarContent justify="end" className="hidden lg:flex">
         <Image src={"/images/logo2.svg"} width={120} height={60} alt="logo" />
       </NavbarContent>
       <NavbarMenu>
