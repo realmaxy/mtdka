@@ -1,11 +1,11 @@
 "use client";
 import {
   Advantages,
-  CustomModal,
-  CustomTitle,
+  Contacts,
   Hero,
   HeroAfter,
   Industries,
+  Service,
 } from "@/components";
 import { NextUIProvider } from "@nextui-org/react";
 
@@ -17,6 +17,8 @@ export default function Home() {
         <HeroAfter />
         <Advantages />
         <Industries />
+        <Contacts />
+        <Service />
       </main>
     </NextUIProvider>
   );

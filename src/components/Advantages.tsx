@@ -100,7 +100,7 @@ const Advantages = (props: Props) => {
               return;
             } else {
               return (
-                <li>
+                <li key={index}>
                   <AdvantageItem
                     label={item.label}
                     image={item.image}
@@ -118,7 +118,7 @@ const Advantages = (props: Props) => {
               return;
             } else {
               return (
-                <li>
+                <li key={index}>
                   <AdvantageItem
                     label={item.label}
                     image={item.image}
@@ -150,7 +150,7 @@ const Advantages = (props: Props) => {
         <div className="z-30">
           <ul className="flex flex-col mr-auto mb-4 ml-6 max-w-[60%]">
             {advantages.map((item, index) => (
-              <li>
+              <li key={index}>
                 <AdvantageItem
                   label={item.label}
                   image={item.image}

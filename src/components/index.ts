@@ -6,9 +6,17 @@ import Advantages from "./Advantages";
 import CustomTitle from "./CustomTitle";
 import CustomModal from "./CustomModal";
 import Industries from "./Industries";
+import Contacts from "./Contacts";
+import Form from "./Form";
+import Service from "./Service";
+import Footer from "./Footer";
 
 export {
+  Footer,
+  Service,
+  Form,
   CustomButton,
+  Contacts,
   Header,
   Hero,
   HeroAfter,

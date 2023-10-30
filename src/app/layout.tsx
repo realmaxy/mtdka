@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import localFont from "next/font/local";
 
 export const metadata: Metadata = {
@@ -35,6 +35,7 @@ export default function RootLayout({
       <body className={`${gilroy.className}flex flex-col`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
