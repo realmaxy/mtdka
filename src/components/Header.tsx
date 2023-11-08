@@ -4,19 +4,23 @@ import {
   Navbar,
   NavbarContent,
   NavbarItem,
-  Link,
   NavbarMenuItem,
   NavbarMenu,
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import Image from "next/image";
 import { headerItems } from "./constants";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} maxWidth="xl">
+    <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      maxWidth="xl"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -30,7 +34,16 @@ export default function Header() {
       <NavbarContent className="hidden md:flex gap-4" justify="center">
         {headerItems.map(item => (
           <NavbarItem key={item.id}>
-            <Link color="foreground">{item.label}</Link>
+            <Link
+              to={item.id}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+              className="cursor-pointer"
+            >
+              {item.label}
+            </Link>
           </NavbarItem>
         ))}
       </NavbarContent>
@@ -40,7 +53,15 @@ export default function Header() {
       <NavbarMenu>
         {headerItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link color="primary" className="w-full" href="#" size="lg">
+            <Link
+              to={item.id}
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={500}
+              className="cursor-pointer"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {item.label}
             </Link>
           </NavbarMenuItem>

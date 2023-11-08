@@ -87,7 +87,7 @@ const AdvantageItem = ({ label, image, direction }: AdvantageItemsProps) => {
 
 const Advantages = (props: Props) => {
   return (
-    <div>
+    <div id="advantages">
       <CustomTitle
         firstWord="Преимущества"
         firstPart="нашего"

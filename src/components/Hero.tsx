@@ -19,7 +19,10 @@ const HeroVector = (props: Props) => {
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex justify-between items-center flex-col md:flex-row ">
+    <div
+      id="about"
+      className="flex justify-between items-center flex-col md:flex-row "
+    >
       <div className="w-full md:w-[49%]">
         <div className="md:flex hidden">
           <HeroVector />
@@ -40,9 +43,11 @@ const Hero = (props: Props) => {
           </p>
         </div>
         <div className="mx-auto md:mx-0 w-min">
-          <CustomButton size="sm" color="darkblue">
-            Заказать консультацию
-          </CustomButton>
+          <a href="tel:+79094265396">
+            <CustomButton size="sm" color="darkblue">
+              Заказать консультацию
+            </CustomButton>
+          </a>
         </div>
       </div>
       <div className="w-full lg:w-[49%] lg:h-screen max-h-[700px] h-[70vh] relative mt-10 md:mt-0">

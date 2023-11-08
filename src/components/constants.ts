@@ -1,6 +1,6 @@
 export const headerItems = [
   {
-    id: "product",
+    id: "about",
     label: "О продукте",
   },
   {
@@ -16,7 +16,7 @@ export const headerItems = [
     label: "Контакты",
   },
   {
-    id: "serviceMaintenance",
+    id: "service",
     label: "Сервисное обслуживание",
   },
 ];

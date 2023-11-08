@@ -62,7 +62,10 @@ const Industries = (props: IndustriesProps) => {
           <Industry text={item} key={index} />
         ))}
       </ul>
-      <div className="w-full bg-gradient-to-r from-blue-100 to-white-100 rounded-xl overflow-hidden border-2 border-blue-300 p-10 ">
+      <div
+        id="clients"
+        className="w-full bg-gradient-to-r from-blue-100 to-white-100 rounded-xl overflow-hidden border-2 border-blue-300 p-10 "
+      >
         <h1 className="text-3xl font-semibold text-blue-200">
           Клиенты <br /> ЭКСПЕРТГРУПП
         </h1>

@@ -4,7 +4,7 @@ type Props = {};
 
 const Service = (props: Props) => {
   return (
-    <div className="my-16 text-center w-full px-4">
+    <div id="service" className="my-16 text-center w-full px-4">
       <h1 className="text-3xl lg:text-4xl text-blue-200 font-medium text-center">
         Гарантийное и постгарантийное
         <br /> сервисное обслуживание
@@ -27,9 +27,41 @@ const Service = (props: Props) => {
         </p>
       </div>
       <p className="text-center">
-        Коммерческий отдел - com.avalon@yandex.ru - +7 (968) 182-08-88 <br />{" "}
-        Сервисный отдел - service.avalon@yandex.ru - +7 (928) 169-03-33
-        <br /> Диспетчерский центр приема заявок - 8 800 505 52 05
+        Коммерческий отдел -{" "}
+        <span>
+          <a href="mailto:com.avalon@yandex.ru" className="hover:text-blue-500">
+            com.avalon@yandex.ru
+          </a>
+        </span>{" "}
+        -{" "}
+        <span>
+          <a href="tel:+79681820888" className="hover:text-blue-500">
+            +7 (968) 182-08-88
+          </a>
+        </span>
+        <br />
+        Сервисный отдел -{" "}
+        <span>
+          <a
+            href="mailto:service.avalon@yandex.ru"
+            className="hover:text-blue-500"
+          >
+            service.avalon@yandex.ru
+          </a>
+        </span>{" "}
+        -{" "}
+        <span>
+          <a href="tel:+79281690333" className="hover:text-blue-500">
+            +7 (928) 169-03-33
+          </a>
+        </span>
+        <br />
+        Диспетчерский центр приема заявок -{" "}
+        <span>
+          <a href="tel:+78005055205" className="hover:text-blue-500">
+            +7 (800) 505-52-05
+          </a>
+        </span>{" "}
       </p>
     </div>
   );
