@@ -11,7 +11,10 @@ const Service = (props: Props) => {
       </h1>
       <p className="text-xl font-light mt-14">
         Существует{" "}
-        <a className=" text-blue-600 font-semibold" href="#">
+        <a
+          className=" text-blue-600 font-semibold"
+          href="https://vk.com/club221342324"
+        >
           сообщество
         </a>{" "}
         поддержки всех пользователей в понятном и доступном, максимально удобном
